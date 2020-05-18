@@ -10,9 +10,11 @@ $(document).ready(function () {
 
     let key;
     const myList = [];
+    let str;
     for (key in myDict) {
       myList.push(myDict[key]);
     }
-    $('.amenities h4').text(myList);
+    str = myList.join(', ');
+    $('.amenities h4').text(str);
   });
 });
